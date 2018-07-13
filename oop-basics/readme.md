@@ -21,7 +21,7 @@ myBubble2 = new Bubble(100, 140, 2, 4);
 
 In `draw()`, call the functions of the objects:
 
-```
+```java
 myBubble1.display();
 myBubble1.move();
 myBubble2.display();
@@ -32,7 +32,7 @@ So my question at this stage is: why can't I use parameter in these functions to
 
 Finally, my Bubble class:
 
-```
+```processing
 class Bubble { 
   // data
   float xPos;
