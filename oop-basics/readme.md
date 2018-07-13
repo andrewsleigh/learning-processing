@@ -1,10 +1,10 @@
 # Object Oriented Programming Basics
 
-If I want to make complex patterns, I need to learn how to make my code more scalable. hat means OOP.
+If I want to make complex patterns, I need to learn how to make my code more scalable. That means OOP.
 
 I'm using the Learning Processing book by Daniel Shiffman to help me through it.
 
-oop_4 is the first version I have working of a basic OOP sketch. Here it is, broken down:
+[oop_4](oop_4/oop_4.pde) is the first version I have working of a basic OOP sketch. Here it is, broken down:
 First, declare objects:
 
 ```processing
