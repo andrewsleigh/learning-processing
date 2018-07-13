@@ -8,7 +8,7 @@ I'm trying to learn Processing. This is where I'm going to share my progress and
 
 * [Learning Processing](README.md)
   * [Waves](waves.md)
-  * [Object Oriented Programming](object-oriented-programming.md)
+  * [Object Oriented Programming](oop-basics/readme.md)
 
 
 ```
