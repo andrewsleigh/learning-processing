@@ -7,14 +7,14 @@ I'm using the Learning Processing book by Daniel Shiffman to help me through it.
 oop_4 is the first version I have working of a basic OOP sketch. Here it is, broken down:
 First, declare objects:
 
-```
+```processing
 Bubble myBubble1;
 Bubble myBubble2;
 ```
 
 In `setup()`, initialise objects:
 
-```
+```processing
 myBubble1 = new Bubble(20, 60, 1, 2);
 myBubble2 = new Bubble(100, 140, 2, 4);
 ```
@@ -77,10 +77,10 @@ Couple of notes here:
 
 * In the class definition, you can use the `xyz_` convention to denote a temporary local variable
 
-* THis does seem a bit redundant. In the book, Shiffman writes (p. 130):
+* This does seem a bit redundant. In the book, Shiffman writes (p. 130):
 
 > In my experience, the use of constructor arguments to initialize object variables can be somewhat bewildering. Please do not blame yourself. The code is strange-looking and can seem awfully redundant: “For every single variable I want to initialize in the constructor, I have to duplicate it with a temporary argument to that constructor?”
  
 > Nevertheless, this is quite an important skill to learn, and, ultimately, is one of the things that makes object-oriented programming powerful.
 
-* I also wanted to add a transparency property, but couldn't get this to work, so I've left this out for now.
+* I also wanted to add a transparency property, but couldn't get this to work, so I've left it out for now.
