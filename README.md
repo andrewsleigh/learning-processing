@@ -12,9 +12,10 @@ I'm trying to learn Processing. This is where I'm going to share my progress and
 
 https://github.com/andrewsleigh/learning-processing/blob/d5f9e3a76aced3b474e1315f94754a6368bd093b/waves/waves_12/waves_12.pde#L5
 
+```
 void setup(){
 
   size(1100, 800);
   // smooth(3);
   frameRate(30); // super slow refresh
-  
+```
