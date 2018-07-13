@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Learning Processing](README.md)
-	* [Waves](waves/readme.md)
-	* [Object Oriented Programming](oop/README.md)
-
-
+* [Waves](waves.md)
+* [Object Oriented Programming](object-oriented-programming.md)
 
