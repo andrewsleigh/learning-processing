@@ -21,7 +21,7 @@ myBubble2 = new Bubble(100, 140, 2, 4);
 
 In `draw()`, call the functions of the objects:
 
-```java
+```processing
 myBubble1.display();
 myBubble1.move();
 myBubble2.display();
