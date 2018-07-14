@@ -4,8 +4,9 @@ If I want to make complex patterns, I need to learn how to make my code more sca
 
 I'm using the Learning Processing book by Daniel Shiffman to help me through it.
 
-[oop_4](oop_4/oop_4.pde) is the first version I have working of a basic OOP sketch. Here it is, broken down:
-First, declare objects:
+### Sketch: [`oop4.pde`](oop_4/oop_4.pde)
+
+[oop_4](oop_4/oop_4.pde) is the first version I have working of a basic OOP sketch. Here it is, broken down. First, declare objects:
 
 ```processing
 Bubble myBubble1;
@@ -28,7 +29,7 @@ myBubble2.display();
 myBubble2.move();
 ```
 
-So my question at this stage is: why can't I use parameter in these functions to create the variations in my two objects? Maybe it will become clear.
+So my question at this stage is: why can't I use parameters in these functions to create the variations in my two objects? Maybe it will become clear...
 
 Finally, my Bubble class:
 
@@ -91,7 +92,7 @@ Couple of notes here:
 
 I'm going to play more with arrays separately, but now the objects are modularised, it should be easy to generate a lot of them and have them all behave differently
 
-[`oop5`](oop_5/oop_5.pde) shows this.
+### Sketch: [`oop5.pde`](oop_5/oop_5.pde)
 
 The relevant parts that I changed here are below.
 
