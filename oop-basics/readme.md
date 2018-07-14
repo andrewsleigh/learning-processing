@@ -84,3 +84,89 @@ Couple of notes here:
 > Nevertheless, this is quite an important skill to learn, and, ultimately, is one of the things that makes object-oriented programming powerful.
 
 * I also wanted to add a transparency property, but couldn't get this to work, so I've left it out for now.
+
+<hr/>
+
+## Making an array of objects
+
+I'm going to play more with arrays separately, but now the objects are modularised, it should be easy to generate a lot of them and have them all behave differently
+
+[`oop5`](oop_5/oop_5.pde) shows this.
+
+The relevant parts that I changed here are below.
+
+Declaring and creating the array of objects, instead of declaring individual objects:
+
+```processing
+int numberOfBubbles = 60;
+Bubble[] myBubbles = new Bubble[numberOfBubbles];
+```
+
+Initialising the array of objects in `setup()`:
+
+```processing
+for (int i = 0; i < 60; i=i+1) {    
+  int y = i * 5;    
+  myBubbles[i] = new Bubble(20, y, 1+i/2, i);
+}  
+```
+ 
+The parameters for `Bubble` here are:
+
+1. xPos – where the bubbles start on the x axis
+2. yPos – where they start on the y axis
+3. xSpeed – how fast they move left to right. I could have just mde this `i` but I didn't want such a aggressive ramping up of speed 
+4. ySpeed – really this is more of a y-axis jiggle factor, as you can see in the class `move()` function
+
+
+The class definition:
+
+```processing
+class Bubble { 
+  // data
+  float xPos;
+  float yPos;
+  float xSpeed;
+  float ySpeed; 
+  float xWidth;
+  float yHeight;
+
+  // constructor, defined with arguments
+  Bubble (float xPos_, float yPos_, float xSpeed_, float ySpeed_) { 
+    xPos = xPos_;
+    yPos = yPos_;
+    xSpeed = xSpeed_;
+    ySpeed = ySpeed_;
+    xWidth = 20;
+    yHeight = 20;
+    col = color(0, 255, 100);    
+  }  
+  
+  // functions
+  void display() {
+    ellipseMode(CENTER);
+    noStroke();
+    fill(col);
+    ellipse(xPos, yPos, xWidth, yHeight); 
+  }
+  
+  void move() {
+    xPos = xPos + xSpeed;   
+    yPos = yPos + random(-0.5,0.5)*ySpeed; // more of a jiggle factor than speed
+    
+    if (xPos > (width + (xWidth / 2))) {
+      xPos = -(xWidth / 2);
+    }
+  }    
+}
+
+```
+ 
+  
+  
+
+
+
+
+
+
