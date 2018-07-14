@@ -166,7 +166,7 @@ class Bubble {
   
 It looks something like this:
 
-![]({{ "oop5.png" | relative_url }})  
+![]("oop5.png")  
 
 
 
