@@ -4,17 +4,11 @@ I'm trying to learn Processing. This is where I'm going to share my progress and
 
 
 
-# Table of contents
+# Contents
 
 * [Learning Processing](README.md)
-  * [Waves](waves.md)
+
   * [Object Oriented Programming](oop-basics/readme.md)
+  * [Arrays](arrays/readme.md)
+  * [Waves](waves.md)  
 
-
-```
-void setup(){
-
-  size(1100, 800);
-  // smooth(3);
-  frameRate(30); // super slow refresh
-```
