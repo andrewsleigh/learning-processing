@@ -43,4 +43,68 @@ for (int i = 0; i < myArrayOfIntegers.length; i++) {
 }
 ```
 
+<hr/>
 
+### Sketch: [`arrays_1.pde`](arrays_1/arrays_1.pde)
+
+So here, I'm just trying to create an array of objects ("grains", which in this simple test are just filled circles), that populate the screen from the top left corner, filling up a row until they get to the bottom of the screen, then starting a new column, filling that up, and so on.
+
+Eventually I hope to do something more interesting with this.  
+
+My class definition is simple:
+
+```processing
+class Grain { 
+  // data
+  float xPos;
+  float yPos;
+  float xWidth;
+  float yHeight;
+  color col;  
+
+  // constructor, defined with arguments
+  Grain (float xPos_, float yPos_) {
+    xPos = xPos_;
+    yPos = yPos_; 
+    xWidth = 9;
+    yHeight = 9;
+    col = color(0); 
+  }  
+  
+  // functions
+  void display() {
+    ellipseMode(CENTER);
+    noStroke();
+    fill(col);
+    ellipse(xPos, yPos, xWidth, yHeight); 
+  }
+}
+```
+
+Where it gets tricky is in the logic I have to use in the `setu()` function to create and fill the array:
+
+```processing
+void setup() {
+  size(400,400);
+
+  for (int i = 0; i < myGrains.length; i=i+1) {
+    float yGridPosition; // where is each grain in the grid: y axis
+    float xGridPosition; // where is each grain in the grid: x axis
+
+    yGridPosition = (currentRow*20);
+    xGridPosition = currentColumn*20;
+    
+    if (yGridPosition > (height-40)) {
+      // println("end of column");
+      currentColumn = currentColumn + 1;
+      currentRow = 0;
+    }  
+     
+    myGrains[i] = new Grain(xGridPosition, yGridPosition); // Initialize objects 
+    currentRow = currentRow + 1;
+  }  
+  
+}
+```
+
+What I'm finding tricky is why I have to do this here in setup. Ultimately all this jostling for position in the grid just comes down to x and y position, which is what the object needs to know in oder to be drawn, but it feels like this isn't modular enough. At the very least, I'd like to be able to redraw these objects with ach screen refresh to animate them in some way...
