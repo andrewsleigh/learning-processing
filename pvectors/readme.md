@@ -26,4 +26,22 @@ I added a randomness factor to the object definition so that it would be differe
 ![](pvector_drawing_2.png)
 
 
-<video src="pvector_drawing_2_animation.mov" controls="" preload="" loop="loop"></video>
+<video width="100%" src="pvector_drawing_2_animation.mov" controls="" preload="" loop="loop"></video>
+
+<hr/>
+
+## Putting PVectors into arrays
+
+This is where it gets fun. First, let's draw a whole grid of warped squares, following the logic I set up in [`arrays_1.pde`](arrays_1/arrays_1.pde).
+
+### Sketch: [`pvector_array_1.pde`](pvector_array_1/pvector_array_1.pde)
+
+<video width="100%" src="pvector_array_1_animation.mov" controls="" preload="" loop="loop"></video>
+
+Now, let's modify the randomness amount as we loop through the array:
+
+### Sketch: [`pvector_array_2.pde`](pvector_array_2/pvector_array_2.pde)
+
+<video width="100%" src="pvector_array_2_animation.mov" controls="" preload="" loop="loop"></video>
+
+
