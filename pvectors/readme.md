@@ -11,4 +11,4 @@ This is a sketch that draws a square on screen using 3 methods:
 3. Doing the same, but adding some skewing to the vectors, while still completing the loop of the (now warped) square.
 
 
-![](pvector_drawing_1)  
+![](pvector_drawing_1.png)  
