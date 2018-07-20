@@ -81,7 +81,7 @@ class Grain {
 }
 ```
 
-Where it gets tricky is in the logic I have to use in the `setu()` function to create and fill the array:
+Where it gets tricky is in the logic I have to use in the `setup()` function to create and fill the array:
 
 ```processing
 void setup() {
