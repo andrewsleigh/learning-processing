@@ -19,6 +19,7 @@ This sketch draws one tile, comprised of 4 sub-tiles. I used different colours f
 
 ## Nesting tiles, and controlling transformations
 
+
 This works fine for one tile, but as this excellent video explains, "translations accumulate"
 
 [The Coding Train: Transformations Pt.1 (Translate, Rotate, Push/Pop) - p5.js Tutorial](https://www.youtube.com/watch?v=o9sgjuh-CBM)
@@ -34,3 +35,7 @@ This sketch builds on the previous one in a couple of ways:
 1. It uses `popMatrix()` and `pushMatrix()` between each transformation to reset the canvas to it's defaults, which makes the translations easier to calculate
 2. It uses nested objects; each tile is an object, and each space group is also an object made up of 4 tiles
 3. It also uses a few functions to tidy up the code and reduce CPU usage, since I'm not doing any animation
+
+The result:
+
+![](cgm_page2_2.png) 
