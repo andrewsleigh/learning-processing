@@ -29,5 +29,6 @@ Can you help me fill in the gaps. Do you have an idea for an exercise that would
   * [Object Oriented Programming](oop-basics/readme.md)
   * [Arrays](arrays/readme.md)
   * [PVectors](pvectors/readme.md)
+  * [Computer Geometric Art patterns book](computer-geometric-art/readme.md)
   * [Waves](waves.md)  
 
