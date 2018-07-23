@@ -16,17 +16,13 @@ This sketch draws one tile, comprised of 4 sub-tiles. I used different colours f
 
 ![](cgm_page2_1.png) 
 
-
 ## Nesting tiles, and controlling transformations
 
-
-This works fine for one tile, but as this excellent video explains, "translations accumulate"
+This works fine for one tile, but as this excellent video explains, "translations accumulate":
 
 [The Coding Train: Transformations Pt.1 (Translate, Rotate, Push/Pop) - p5.js Tutorial](https://www.youtube.com/watch?v=o9sgjuh-CBM)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o9sgjuh-CBM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-So ever time I rotate, move or flip a tile, I need to reset the matrix. 
+So every time I rotate, move or flip a tile, I need to reset the matrix. 
 
 ### Sketch: [`cgm_page2_2.pde`](cgm_page2_2/cgm_page2_2.pde)
 
