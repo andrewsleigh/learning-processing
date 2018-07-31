@@ -19,7 +19,7 @@ This sketch draws one tile, comprised of 4 sub-tiles. I used different colours f
 
 ![](cgm_page2_1.png) 
 
-## Nesting tiles and controlling transformations
+## Nesting tiles and controlling transformations
 
 This works fine for one tile, but as this excellent video explains, "translations accumulate":
 
@@ -49,5 +49,4 @@ The result:
 
 ![](cgm_page2_3.png) 
 
-![](cgm_page2_2.png) 
 

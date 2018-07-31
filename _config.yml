@@ -1,2 +1,4 @@
 theme: jekyll-theme-leap-day
 highlighter: rouge
+# in the templates via {{ site.myvariable }}.
+title: Learning Processing
