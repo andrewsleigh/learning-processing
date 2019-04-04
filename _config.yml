@@ -1,4 +1,0 @@
-theme: jekyll-theme-cayman
-highlighter: rouge
-# in the templates via {{ site.myvariable }}.
-title: Learning Processing

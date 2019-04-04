@@ -1,0 +1,16 @@
+# Jekyll
+docs/_site/
+docs/.jekyll-cache
+docs/.jekyll-metadata
+docs/.sass-cache
+# Ruby
+docs/.bundle/
+docs/.byebug_history
+docs/.ruby-gemset
+docs/.ruby-version
+docs/*.gem
+docs/Gemfile.lock
+# Files
+.analysis
+.DS_Store
+docs/.DS_Store
